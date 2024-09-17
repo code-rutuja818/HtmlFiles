@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script type="text/javascript">
+        function clearFeild(){
+            const txtfirst = document.querySelector('#name');
+            const btnperform = document.querySelector('#ptnperform');
+            document.getElementById('sub1').value = "";
+            document.getElementById('sub2').value = "";
+            document.getElementById('sub3').value = "";
+            document.getElementById('sub4').value = "";
+            document.getElementById('sub5').value = "";
+            document.getElementById('res').value = "";
+            document.getElementById('name').value ="";
+            document.getElementById('grade').value ="";
+            
+            btnperform.disabled = true;
+            txtfirst.focus();
+           
+        }
+
+        function doTask(){
+            checkEmptyFeild();
+            var n1=parseInt(document.getElementById('sub1').value);
+            var n2=parseInt(document.getElementById('sub2').value);
+            var n3=parseInt(document.getElementById('sub3').value);
+            var n4=parseInt(document.getElementById('sub4').value);
+            var n5=parseInt(document.getElementById('sub5').value);
+            var per =(n1+n2+n3+n4+n5)/5;
+            document.getElementById('res').value=per;
+            var per=(n1+n2+n3+n4+n5);
+            document.getElementById('tl').value=per;
+
+              
+            if(per>=90)
+            {
+                document.getElementById('grade').value='A';
+            }
+
+            else if(per<80 && per>=70)
+            {
+                document.getElementById('grade').value='B';
+            }
+            else if(per<70 && per>=60)
+            {
+                document.getElementById('grade').value='C';
+            }
+            else (per<60 && per>=35)
+            {
+                document.getElementById('grade').value='D';
+            }
+            
+
+            
+        
+        }
+
+        function checkEmptyFeild(){
+            
+        
+        }
+        function checkEnabledDisabled(){
+            const txtfirst=document.querySelector('#name');
+            const btnperform=document.querySelector('#btnper');
+
+            btnperform.disabled=true;
+            txtfirst.focus();
+           
+        }
+    </script>
+    <style>
+        .main{
+            
+            margin: 150px;
+            margin-left: 400px;
+            background-color: skyblue;
+            width:500px;
+            text-align:center ;
+            border:2px solid black;
+            padding-top: 10px;
+            
+
+        }
+       * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+       }
+       main,table{
+        margin: 10px;
+        height: 100px;
+        margin-left: 50px;
+        line-height: 25px;
+       }
+       main,input{
+        margin-left: 50px;
+        
+       }
+
+       
+    
+
+    </style>
+</head>
+<body onload="checkEnabledDisabled()">
+    <div class="main">
+    <table>
+        <tr>
+            <td><label for="name"> Enter Your Name </label></td>
+            <td><input type="text" id="name" name="name" autocomplete="off"></td>
+        </tr>
+        <tr>
+            <td><label for="sub1"> English </label></td>
+            <td><input type="text" id="sub1" name="sub1" autocomplete="off"></td>
+        </tr>
+
+        <tr>
+            <td><label for="sub2"> Marathi </label></td>
+            <td><input type="text" id="sub2" name="sub2" autocomplete="off"></td>
+        </tr>
+
+        <tr>
+            <td><label for="sub3">Hindi</label></td>
+            <td><input type="text" id="sub3" name="sub3" autocomplete="off"></td>
+        </tr>
+
+        <tr>
+            <td><label for="sub4">Science</label></td>
+            <td><input type="text" id="sub4" name="sub4" autocomplete="off"></td>
+        </tr>
+
+        <tr>
+            <td><label for="sub5">Maths</label></td>
+            <td><input type="text" id="sub5" name="sub5" autocomplete="off"></td>
+        </tr>
+
+        <tr>
+            <td><label for="tl">Total Marks</label></td>
+            <td><input type="text" id="tl" name="tl" autocomplete="off"></td>
+        </tr>
+
+        <tr> 
+            <td><label for="res">Average</label></td>
+            <td><input type="text" id="res" name="res" autocomplete="off"></td>
+        </tr>
+        <tr> 
+            <td><label for="grade">Grade</label></td>
+            <td><input type="text" id="grade" name="grade" autocomplete="off"></td>
+        </tr>
+
+    <tr>
+        <td></td>
+        <td>
+            <button id="btnoperation" onclick="doTask()">Submit</button>
+            <button id="btnClear" onclick="clearFeild()">Clear</button>
+        </td>
+    </tr>
+    </table>
+    </div>
+    <script type="text/javascript">
+        const btnperform = document.querySelector(' #btnOperation');
+        const txtfirst = document.querySelector('#n1')
+    </script>
+</body>
+</html>

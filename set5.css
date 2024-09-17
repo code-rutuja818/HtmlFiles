@@ -1,0 +1,31 @@
+.navbar{
+    background-color: rgb(171, 171, 178);
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    color: black;
+    text-decoration: none;
+    background-color: aqua;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    background-color: white;
+}
+.outer{
+  height: 400px;
+  width: 400px;
+  background-color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+  }
+  
+
+

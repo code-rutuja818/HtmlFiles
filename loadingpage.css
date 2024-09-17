@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top{
+    
+}
+.wrap{
+    display: flex;
+
+}
+a{
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 70px;
+}
+.nav ul li{
+    float: left;
+    margin: 0px 5px;
+}
+.nav ul::after{
+  content:"";
+  display: block;
+  clear: both;
+
+}
+.nav ul li a{
+    display: block;
+    padding: lightskyblue;
+}
+.nav ul li:hover a{
+    background-color: blue;
+    color: lightsky;
+    margin-right: 50px;
+}
+.div{
+    grid-row-start:2;
+
+}
+.nav{
+    margin-right: 600px;
+}
+.temp{
+
+}
+.temp h2{
+    padding-top: 20px;
+}
+.temp h5{
+    padding-top: 20px;
+}
+.temp p{
+    padding-top: 5px
+    
+}
+button{
+    background-color:rgb(0, 242, 255);
+    width:70px;
+    height: 30px;
+    color: white;
+}
+
+.para1 h3{
+    padding-top: 30px;
+}
+.box{
+    height: 100px;
+    width: 350px;
+    border:1px solid grey;
+    color: grey;
+    padding-top: 20px;
+}
+.para1 p{
+    padding-top: 15px;
+}
+.para1{
+  float: left;
+  margin-right: 40px;
+  margin-left: 15px;
+}
+.para2{
+    float:left;
+    margin-left: 100px;
+}
+.para3{
+    float: left;
+    margin-left: 100px;
+}
+.para2 h3{
+    padding-top: 30px;
+    color: aqua;
+    text-decoration: underline;
+}
+.box2{
+    height: 100px;
+    width: 350px;
+    border:1px solid grey;
+    color: grey;
+    padding-top: 20px;
+}
+.para2 p{
+   padding-top: 15px;
+}
+
+
+.para3 h3{
+    padding-top: 30px;
+}
+.box3{
+    height: 100px;
+    width: 350px;
+    border:1px solid grey;
+    color: grey;
+    padding-top: 20px;
+}
+.para3 p{
+    padding-top: 15px;
+}
+.square h1{
+padding-top: 20%;
+
+
+}
+
+.box4{
+    height: 70px;
+    width: 80px;
+    border: 1px solid;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+   
+}
+
+.para4  p{
+    margin-left: 10%;
+    padding-top: 10px;
+}
+.para4 h3{
+    margin-left: 10%;
+    padding-top:14px;
+}
+
+
+.box5{
+    height: 70px;
+    width: 80px;
+    border: 1px solid;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+   
+}
+
+.para5  p{
+    margin-left: 10%;
+    padding-top: 10px;
+}
+.para5 h3{
+    margin-left: 10%;
+    padding-top:14px;
+    color: skyblue;
+    text-decoration: underline;
+}
+
+.box6{
+    height: 70px;
+    width: 80px;
+    border: 1px solid;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+   
+}
+
+.para6  p{
+    margin-left: 10%;
+    padding-top: 10px;
+}
+.para6 h3{
+    margin-left: 10%;
+    padding-top:14px;
+}
+.para7{
+float: 
+}
+
+
+

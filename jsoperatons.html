@@ -1,0 +1,132 @@
+Conditional Statement with Switch case and perform some events
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<script type ="text/javascript">
+function clearTextFields(){
+const btnperform =
+document.querySelector('#btnOperation');
+document.getElementById('n1').value = "";
+document.getElementById('n2').value = "";
+document.getElementById('op').value = "select";
+document.getElementById('res').value = "";
+btnperform.disabled = true;
+document.getElementById('n1').focus();
+}
+function checkEnabledDisabled()
+{
+const btnperform =
+document.querySelector('#btnOperation');
+const txtfirst = document.querySelector('#n1');
+btnperform.disabled = true;
+txtfirst.focus();
+}
+function doTask(){
+checkEmptyFields();
+var num1 = parseInt(document.getElementById('n1').value);
+var num2 =parseInt(document.getElementById('n2').value);
+var op = document.getElementById('op').value;
+switch(op)
+{
+case '+':
+var result = num1 + num2;
+document.getElementById('res').value = result;
+break;
+case '-':
+var result = num1 - num2;
+document.getElementById('res').value = result;
+break;
+case '*':
+var result = num1 * num2;
+document.getElementById('res').value = result;
+break;
+
+case '/':
+var result = num1 / num2;
+document.getElementById('res').value = result;
+break;
+
+default:
+alert('Invalid operations..');
+num1.focus();
+}
+}
+function checkEmptyFields()
+{
+if(document.getElementById('n1').value == "")
+{
+alert('please enter first number');
+document.getElementById('n1').focus();
+}
+else if(document.getElementById('n2').value == "")
+{
+alert("please enter second number");
+document.getElementById('n2').focus();
+document.getElementById('n2').style.backgroundColor =
+'yellow';
+}
+else if (document.getElementById("op").value == "select")
+{
+alert("please select at least one operation");
+document.getElementById('op').focus();
+}
+}
+</script>
+</head>
+<body onload="checkEnabledDisabled()">
+<table>
+<tr>
+<td><label for ="n1">Enter First Number</label></td>
+<td><input type="text" id="n1" name="n1"
+autocomplete="off"></td>
+</tr>
+<tr>
+<td><label for ="n2">Enter Second Number</label></td>
+<td><input type="text" id="n2" name="n2"
+autocomplete="off"></td>
+</tr>
+<tr>
+<td><label for ="op">Select Any Operation</label></td>
+<td>
+<select id="op">
+<option value="select">Select</option>
+<option value="+">Addition</option>
+<option value="-">Subtraction</option>
+<option value="*">Multiplication</option>
+<option value="/">divide</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for ="res">Result are</label></td>
+<td><input type="text" id="res" name="res"
+autocomplete="off" readonly></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<button id ="btnOperation" onclick="doTask()">Perform
+Task</button>
+<button id ="btnClear"
+onclick="clearTextFields()">Clear Fields</button></td>
+</tr>
+</table>
+<script type ="text/javascript">
+const btnperform = document.querySelector('#btnOperation');
+const txtfirst = document.querySelector('#n1');
+txtfirst.addEventListener("keyup", function(){
+if(txtfirst.value.length > 0)
+{
+btnperform.disabled = false;
+}
+else
+{
+btnperform.disabled = true;
+}
+});
+</script>
+</body>
+</html>

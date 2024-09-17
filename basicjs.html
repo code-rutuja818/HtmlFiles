@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clearText()
+        {
+            document.getElementById('n1').value=" ";
+            document.getElementById('n2').value=" ";
+            document.getElementById('res').value=" ";
+
+            document.getElementById('n1').focus();
+        }
+        function add()
+        {
+            var n1=parseInt(document.getElementById('n1').value);
+            var n1=parseInt(document.getElementById('n2').value);
+
+            var result=n1 + n2;
+            document.getElementById('res').value=result;
+
+        }
+    </script>
+</head>
+<body>
+     <table>
+        <tr>
+            <td> Enter First Number</td>
+            <td><input type="text" id="n1"></td>
+        </tr>
+
+        <tr>
+            <td> Enter second Number</td>
+            <td><input type="text" id="n2"></td>
+        </tr>
+        
+        <tr>
+            <td>result:</td>
+            <td><input type="text" id="res"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+        <td>
+             <button id="btnAdd" onclick="add()"> Add</button>
+             <button id="btnClear" onclick="clearText()">Clear text</button>
+        </td>
+        </tr>
+     </table>
+</body>
+</html>

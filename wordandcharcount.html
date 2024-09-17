@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: black;
+            color: blue;
+            width:50%;
+            height: 50px;
+            text-align: center;
+        }
+        .div{
+            border: 2px solid red;
+            height: 50%;
+            width: 50%;
+            
+        }
+    </style>
+
+    
+</head>
+<body>
+   
+        
+    <h1> Word And Charecter Count</h1>
+
+    <textarea id="text" colos="40px" rows="10px">
+    </textarea>
+   <p>
+    
+    word count<h4 id="word">0</h4>
+        Charecter count<h4 id="count">0</h4>
+    </p>
+    
+    <script type="text/javascript">
+    
+    document.getElementById('text').addEventListener('input',function(){
+
+          c=document.getElementById('text').value;
+
+         document.getElementById('count').innerHTML=c.length;
+
+       var word= document.getElementById('word')=c;
+
+
+       
+    });
+  
+    </script>
+</body>
+</html>

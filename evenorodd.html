@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd or even find out</title>
+    
+    <script type="text/javascript">
+        function clearTextFeilds(){
+        document.getElementById('n1').value="";
+        document.getElementById('n1').value="";
+        document.getElementById('n1').focus();
+         
+     }
+      function search(){
+         var textnum=document.getElementById('n1').value="";
+         if(textnum%2==0)
+         {
+            document.getElementById('n1').value=("num is even");
+         }
+         else{
+            document.getElementById('n1').value=("num is odd");
+         }
+      }
+      
+    </script>
+</head>
+<body>
+    <div class="box">
+        <table>
+            <tr>
+                <td> <input type="text" name="n1"></td>
+                <td> <input type="text" name="n1"></td>
+            </tr>
+        </table>
+        <td> 
+            <button id="btnsearch" onclick="search()">search</button>
+        </td>
+    </div>
+</body>
+</html>

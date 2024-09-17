@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            margin: auto;
+           
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 10px;
+        }
+        .para1
+        {
+            grid-gap: 10px;
+            border: 1px solid;
+        }
+        .para2
+        {
+            border: 1px solid;
+        }
+        .para3
+        {
+            border: 1px solid;
+        }
+        .box1
+        {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="para1">para</div>
+        <div class="para2">para</div>
+        <div class="para3">para</div>
+        <div class="box1">box</div>
+        <div class="box2">box</div>
+        <div class="box3">box</div>
+    
+    </div>
+</body>
+</html>

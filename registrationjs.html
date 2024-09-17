@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<style>
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body
+{
+    background-image: linear-gradient(45deg,#261f40,#085732);
+}
+.box {
+   width: 80%;
+   height: auto;
+   border: 3px solid #000;
+   margin: 10px auto;
+   background-color: white;
+}
+#heading {
+    width: 90%;
+    height: 60px;
+    background-image: linear-gradient(45deg,#0b7cc2ce,#ac1c84);
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#heading h2 {
+    text-align: center;
+    line-height: 50px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida
+    Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#form-data {
+    width: 80%;
+    height: auto;
+    border: 3px solid  black;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+}
+#form-table {
+   width: 80%;
+   height: 200px;
+   border: 3px solid #000;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 20px;
+   overflow: scroll;
+   box-shadow: dark grey;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+input[type="date"] {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+input[type="email"] {
+width: 50%;
+padding: 5px;
+margin: 5px 0px;
+}
+
+input[type="tel"] {
+width: 50%;
+padding: 5px;
+margin: 5px 0px;
+}
+
+button {
+  width: 16%;
+  height: 40px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: rgba(240, 84, 12, 0.912);
+  color: white;
+ /* border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;*/
+  transition: all 0.1s ease-in;
+}
+button:hover {
+   background-color: rgb(218, 146, 11);
+   color: white;
+   transform: translateY(-10px);
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#form-table table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#form-table table tr th {
+  border: 1px solid #000;
+  padding: 3px;
+/* background-image: linear-gradient(45deg,#000046,#1CB5E0);
+*/
+  background-color: rgb(11, 195, 246);
+  color: white;
+}
+
+#form-table table tr td {
+  border: 1px solid #000;
+  padding: 3px;
+  text-align: center;
+}
+
+#form-table table tr:hover
+{
+  background-color: darkkhaki;
+  cursor: pointer;
+}
+
+.serach-div {
+  width: 80%;
+  height: 60px;
+/* background-color: rgb(129, 6, 37); */
+  background-image: linear-gradient(45deg,#0b7cc2ce,#ac1c84);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: right;
+}
+
+.serach-div label {
+  color: white;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida
+  Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+.serach-div input {
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: rgba(23, 175, 222, 0.3);
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.serach-div input::placeholder {
+  color: white;
+}
+
+.upload-img {
+  width: 25%;
+  height: 280px;
+/* border: 3px solid #000; */
+  position: absolute;
+  right: 300px;
+}
+
+.upload-img input[type="file"] {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.upload-img #photo img {
+  width: 60%;
+  height: 70%;
+  margin-top: 10px;
+  margin-left: 70px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+input::file-selector-button {
+background-image: linear-gradient(
+to right, 
+  #ff7a18,
+  #af002d,
+  #319197 100%,
+  #319197 200%
+);
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+  margin-left: 30px;
+  margin-top: 10px;
+  width:100px;
+
+}
+
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  transform: scale(1.1);
+}
+
+</style>
+</head>
+<body>
+  <div class="box">
+    <div id="heading">
+    <h2>Employee Registration Form</h2>
+    </div>
+        <div id="form-data">
+        <label for="name">Enter Name :</label>
+        <input type="text" id="name" placeholder="enter your name" />
+        <label for="date">Select birthdate :</label>
+        <input type="date" id="birth" placeholder="select birthdate"
+        />
+        <label for="email">Enter email :</label>
+        <input type="email" id="email" placeholder="enter your email"
+        />
+        <label for="mob">Enter mobile Number :</label>
+        <input type="tel" id="mob" placeholder="enter your mobile" />
+      
+
+    <table>
+      <tr>
+      <td>
+      <button id="btn-add" onclick="addRowToTable()">
+         <i class="fa-solid fa-cloud-arrow-up"></i> Save Data
+      </button>
+      <button id="btn-edit">
+         <i class="fa-solid fa-pencil"></i> Edit
+      </button>
+      <button id="btn-delete">
+         <i class="fa-solid fa-trash"></i> Delete
+      </button>
+      
+    </td>
+    </tr>
+    </table>
+    <div class="upload-img">
+    <p id="photo">
+    <img src="C:\Users\rutuj\OneDrive\Desktop\html all\wallpaper - Copy.jpg">
+    </p>
+    <form>
+    <input type="file" accept="image/*" id="image-upload" />
+    </form>
+    </div>
+    </div>
+    <div class="serach-div">
+    <form>
+    <label for="search">Enter Search keyword</label>
+    <input type="text" id="search" placeholder="Search for" />
+    </form>
+    </div>
+    <div id="form-table">
+    <table id="table">
+    <tr>
+    <th>FullName</th>
+    <th>Birthdate</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Profile Pic</th>
+    </tr>
+    </table>
+    </div>
+    </div>
+    <script>
+    var mob = document.getElementById('mob');
+    mob.addEventListener('keypress', function(e){
+    var ch = String.fromCharCode(e.which)
+    if(!(/[0-9]/.test(ch)) || mob.value.length == 10)
+    {
+    e.preventDefault();
+    alert("Only numbers and 10 digit allowed")
+  }
+});
+loadImage();
+</script>
+</body>
+</html>
+
+
